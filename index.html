@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Tea Cozy is a tea store for all your needs!">
+   <title>TeaCozy</title>
+   <link rel="stylesheet" href="./style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <header>
+      <div class="logo">
+         <figure><img src="./img/logo.png" alt="The Tea Cozy">
+         </figure>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#featuredtea">Featured Tea</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <section id="mission">
+         <div class="highlight">
+            <h2>Our Mission</h2>
+            <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea.</h4>
+         </div>
+
+      </section>
+      <section id="featuredtea">
+         <div class="highlight border">
+            <h2>Tea of the Month</h2>
+            <p>What's steeping at The Tea Cozy?</p>
+         </div>
+
+         <article class="tea-of-the-month">
+            <figure><img src="./img/berryblitz.jpg" alt="Fall Berry Blitz">
+               <figcaption>Fall Berry Blitz</figcaption>
+            </figure>
+            <figure><img src="./img/spiced-rum.jpg" alt="Spiced Rum Tea">
+               <figcaption>Spiced Rum Tea</figcaption>
+            </figure>
+            <figure><img src="./img/donut.jpg" alt="Seasonal Donuts">
+               <figcaption>Seasonal Donuts</figcaption>
+            </figure>
+            <figure><img src="./img/myrtle-ave.jpg" alt="Myrtle Avenue Tea">
+               <figcaption>Myrtle Avenue Tea</figcaption>
+            </figure>
+            <figure><img src="./img/bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+               <figcaption>Bedford Bizarre Tea</figcaption>
+            </figure>
+         </article>
+      </section>
+      <section id="locations">
+         <div class="highlight">
+            <h2>Locations</h2>
+         </div>
+         <article class="flex">
+            <div class="items border">
+               <h3>Downtown</h3>
+               <ul>
+                  <li>384 West 4th St</li>
+                  <li>Suite 108</li>
+                  <li>Portland, Maine</li>
+               </ul>
+            </div>
+            <div class="items border">
+               <h3>East Bayside</h3>
+               <ul>
+                  <li>3433 Phisherman's Avenue
+                  </li>
+                  <li>(Northwest Corner)</li>
+                  <li>Portland, Maine</li>
+               </ul>
+            </div>
+            <div class="items border">
+               <h3>Oakdale</h3>
+               <ul>
+                  <li>515 Crescent Avenue</li>
+                  <li>Second Floor</li>
+                  <li>Portland, Maine</li>
+               </ul>
+            </div>
+         </article>
+      </section>
+      <section id="contact">
+
+         <div class="highlight border">
+            <h2>Send us a Message</h2>
+         </div>
+         <div class="flex">
+            <div class="tc-email">
+               <p>contact@theteacozy.com</p>
+               <p>917-555-8904</p>
+               <hr>
+            </div>
+            <div class="form"><label for="name">Full Name</label>
+               <input type="text" name="Name" id="name" placeholder="Your Name" required minlength="3" maxlength="20" />
+               <label for="email">Email Address</label>
+               <input type="email" name="Email" id="email" placeholder="email@loremipsum.com" required />
+               <label for="message">Message</label>
+               <textarea name="Message" id="message" rows="3" placeholder="Say tea!" required></textarea>
+               <button class="border" type="submit">Submit</button></div>
+
+         </div>
+      </section>
+      <footer>copyright The Tea Cozy 2017</footer>
+   </main>
+</body>
+
+</html>

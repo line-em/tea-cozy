@@ -1,0 +1,225 @@
+/* Universal Styles */
+
+:root {
+	--main: rgb(202, 158, 86);
+	--main-alpha: rgb(202, 158, 86, 0.85);
+	--accent: rgb(68, 122, 111);
+	--accent-alpha: rgba(68, 167, 177, 0.7);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 300 1.2rem/1.5 Source Sans Pro;
+	background-color: var(--accent);
+	color: white;
+	text-align: center;
+}
+
+h1,
+h2 {
+	font-family: "Ovo", serif;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+b,
+strong {
+	font-weight: 600;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: underline 2px;
+	text-decoration-color: var(--main);
+	text-underline-offset: 0.3rem;
+	font-weight: 600;
+	color: #fff;
+	padding: 0.5rem;
+}
+
+a:hover {
+	color: var(--main-alpha);
+	transition: 300ms ease;
+}
+
+.highlight {
+	background-color: var(--main-alpha);
+	padding: 2rem;
+	width: 100%;
+	min-width: fit-content;
+}
+
+#featuredtea .highlight,
+#contact .highlight {
+	background-color: var(--accent);
+}
+
+.border,
+hr {
+	border-top: 1rem solid var(--main);
+}
+
+/* Containers */
+
+/* nav bar */
+
+header {
+	background-color: var(--accent);
+	display: flex;
+	min-height: 4rem;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-bottom: 1rem solid var(--main);
+	padding: 1rem;
+}
+
+header img {
+	width: 150px;
+}
+
+@media screen and (max-width: 400px) {
+	header {
+		flex-direction: column;
+	}
+	header img {
+		width: 100px;
+	}
+	header li {
+		padding: 0;
+		font-size: 1rem;
+	}
+}
+
+header li {
+	display: inline-block;
+	padding: 0.5rem;
+}
+
+/* mission */
+
+#mission {
+	background-image: url(./img/mission.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 550px;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* featured tea */
+
+#featuredtea img {
+	width: 320px;
+	border-radius: 2rem;
+	margin: 1rem;
+	border: 0.2rem solid var(--main);
+	padding: 0.5rem;
+	transition: 300ms ease;
+}
+
+#featuredtea img:hover {
+	border: none;
+}
+
+.tea-of-the-month {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 3rem;
+}
+
+/* locations */
+
+#locations {
+	background-image: url(./img/locations.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin-top: 2rem;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2rem;
+}
+
+.items {
+	background-color: var(--accent);
+	flex: 1 1 200px;
+	padding: 2rem;
+	margin: 3rem;
+}
+
+/* contact us */
+
+.form,
+.tc-email {
+	margin: 2rem;
+	text-align: left;
+}
+
+input,
+textarea {
+	display: block;
+	height: 2rem;
+	margin: 1rem 0;
+	width: 20rem;
+	background-color: var(--main);
+	border: none;
+}
+
+button {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #ddd;
+	width: 100%;
+	background-color: var(--accent);
+	border: var(--main) 2px solid;
+	padding: 1rem;
+	transition: 300ms ease;
+}
+
+button:hover {
+	background-color: #ddd;
+	color: var(--accent);
+}
+
+button:active {
+	background-color: var(--main);
+}
+
+/* footer */
+
+footer {
+	font-size: 1rem;
+	font-weight: 600;
+	background-color: var(--main-alpha);
+	text-align: left;
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+	#mission {
+		height: 700px;
+	}
+}
